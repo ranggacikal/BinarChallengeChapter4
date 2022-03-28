@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Challenge Chapter 4</string>
+    <string name="kertas">Kertas</string>
+    <string name="title_gunting">gunting</string>
+    <string name="title_batu">Batu</string>
+    <string name="pemain_1">Pemain 1</string>
+    <string name="com">COM</string>
+</resources>
