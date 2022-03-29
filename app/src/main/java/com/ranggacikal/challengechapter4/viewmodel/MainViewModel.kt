@@ -1,5 +1,6 @@
 package com.ranggacikal.challengechapter4.viewmodel
 
+import android.util.Log
 import androidx.lifecycle.ViewModel
 
 class MainViewModel: ViewModel() {
@@ -16,6 +17,8 @@ class MainViewModel: ViewModel() {
             3 -> pilihanPlayer = "gunting"
         }
 
+        Log.d("pilihanPlayer", "pilihanUser: $pilihanPlayer")
+
         val randomNumber = (1..3).random()
 
         numberCom = randomNumber
@@ -25,6 +28,8 @@ class MainViewModel: ViewModel() {
             2 -> pilihanCom = "kertas"
             3 -> pilihanCom = "gunting"
         }
+
+        Log.d("pilihanComputer", "pilihanCom: $pilihanCom")
 
         if (pilihanPlayer == pilihanCom){
             hasilValidasiPlayer = "draw"
