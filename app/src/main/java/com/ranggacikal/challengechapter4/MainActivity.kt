@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         viewModel = ViewModelProvider(this)[MainViewModel::class.java]
 
+        // di sni kamu bisa gunakan binding.run {} dan di dalam run nya kamu bisa memanggil id langsung biar kamu tidak memanggil secara berulang untuk binding nya
         binding.imgRefresh.setOnClickListener {
             binding.tvVs.visibility = View.VISIBLE
             binding.tvPemainMenang.visibility = View.GONE
